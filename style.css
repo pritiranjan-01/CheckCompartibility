@@ -27,7 +27,7 @@
   height: 400px;
   width: 400px;
   background-color: brown;
-  background-image: url("./butterfly.avif");
+  background-image: url("assets/butterfly.avif");
   image-resolution: inherit;
   background-size: cover;
   background-position: center;
