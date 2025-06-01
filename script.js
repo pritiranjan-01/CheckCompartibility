@@ -24,7 +24,7 @@ function askAge() {
 
 function askGender() {
   var gender = prompt("Enter your gender (eg., male or female)").toLowerCase();
-  while (gender !== "male" && gender !== "female") {
+  while (gender !== "male" && gender !== "female" && gender !== "m" && gender !== "f") {
     alert("Enter gender as male or female.");
     gender = prompt("Enter your gender (eg., male or female)").toLowerCase();
   }
@@ -55,10 +55,10 @@ function checkCompartibility() {
       return;
     } else {
       var h = askGender();
-      if (h == "male") {
+      if (h == "male" || h=="m") {
         var x = askgfName();
         checkComp(x);
-      } else if (h == "female") {
+      } else if (h == "female"|| h=="f") {
         var y = askbfName();
         checkComp(y);
       }
